@@ -95,6 +95,9 @@
     transform: scale(1.05);
   }
 }
+.project-background {
+  background-color: white;
+}
 
 .project-info {
   text-align: left;
@@ -154,9 +157,7 @@ a {
   height: auto;
   border: 2px solid #007bff;
   border-radius: 50%;
-}
-
-  
+} 
 
   /* Media query for tablets */
 @media screen and (max-width: 768px) {
@@ -190,5 +191,13 @@ a {
 
     .navigation {
       display: none; /* Hide the navigation buttons */
+    }
+
+    .project-buttons-container {
+      display: flex;
+      align-items: left;
+    }
+    .project-description {
+      max-width: 90%;
     }
   }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.df8d11cf.css",
-    "main.js": "/Portfolio/static/js/main.63faab4d.js",
+    "main.js": "/Portfolio/static/js/main.bc7d3ee7.js",
     "static/media/me.png": "/Portfolio/static/media/me.3915dbc03a443cabbabd.png",
     "static/media/pythonDataSciencePandas.png": "/Portfolio/static/media/pythonDataSciencePandas.4dc53ca52516d95dde4b.png",
     "static/media/djangoModels.png": "/Portfolio/static/media/djangoModels.0de433b6579bbdcc40ca.png",
@@ -23,10 +23,10 @@
     "static/media/simonGame.png": "/Portfolio/static/media/simonGame.732cfc72c31236cd5dbb.png",
     "index.html": "/Portfolio/index.html",
     "main.df8d11cf.css.map": "/Portfolio/static/css/main.df8d11cf.css.map",
-    "main.63faab4d.js.map": "/Portfolio/static/js/main.63faab4d.js.map"
+    "main.bc7d3ee7.js.map": "/Portfolio/static/js/main.bc7d3ee7.js.map"
   },
   "entrypoints": [
     "static/css/main.df8d11cf.css",
-    "static/js/main.63faab4d.js"
+    "static/js/main.bc7d3ee7.js"
   ]
 }

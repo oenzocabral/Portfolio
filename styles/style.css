@@ -1,0 +1,235 @@
+/* Add this CSS to your stylesheet or CSS-in-JS solution */
+.certificate {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 0 10% 0;
+  }
+  
+  .certificate img {
+    max-width: 40%;
+    margin-right: 20px;
+  }
+  
+  .certificate-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements on the left vertical axis */
+    padding-left: 22px;
+  }
+  
+  .certificate h2 {
+    margin: 0;
+    text-align: left;
+    max-width: 450px;
+  }
+  
+  h3 {
+    padding-top: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .certificates-carousel {
+    position: relative;
+    text-align: center;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to the buttons for spacing */
+  }
+  
+  .navigation button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation button:hover {
+    background-color: #0056b3;
+  }
+
+.project-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.project-background {
+  background-color: white;
+}
+
+.project-info {
+  text-align: left;
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.technologies span {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* AboutMe.css */
+
+.about-me {
+  padding: 40px 0;
+}
+
+.about-me h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-me img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+} 
+
+/* Remove the border on hover and active state */
+.custom-dropdown-button:focus,
+.custom-dropdown-button:active,
+.custom-dropdown-button:hover {
+  box-shadow: none;
+  border: none;
+}
+
+/* Style the button text color and background color */
+.custom-dropdown-button {
+  color: #fff;
+  background-color: #007bff; /* Change to your desired background color */
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+  color: #000; /* Change to your desired text color */
+  background-color: #fff; /* Change to your desired background color */
+}
+
+/* Style the active dropdown item */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #007bff; /* Change to your desired active background color */
+  color: #fff; /* Change to your desired active text color */
+}
+
+/* Style the dropdown items on hover */
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Change to your desired hover background color */
+  color: #000; /* Change to your desired hover text color */
+}
+
+  /* Media query for tablets */
+@media screen and (max-width: 768px) {
+    .certificate img {
+      max-width: 100%; /* Adjust image width for smaller screens */
+      max-height: auto; /* Maintain image aspect ratio */
+    }
+  }
+  
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+    .certificate {
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificate img {
+        padding: 0;
+        margin: 0;
+        max-width: 90%;
+        max-height: 50vh; /* Set a max height to fit within the screen */
+    }
+  
+    .certificate-info {
+      text-align: center;
+      margin-top: 20px; /* Add space between image and certificate info */
+    }
+    
+    .certificate h2 {
+        max-width: 85%;
+    }
+
+    .navigation {
+      display: none; /* Hide the navigation buttons */
+    }
+
+    .project-buttons-container {
+      display: flex;
+      align-items: left;
+    }
+    .project-description {
+      max-width: 90%;
+    }
+  }

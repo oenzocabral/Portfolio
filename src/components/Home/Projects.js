@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import pythonOop from '../../imgs/Projects/portfolio.png';
-import simonGame from '../../imgs/Projects/simonGame.png';
 import clothesClassifier from '../../imgs/Projects/clothesClassifier.png';
+import purchasePredictor from '../../imgs/Projects/purchasePredictor.png';
+import hangman from '../../imgs/Projects/hangman.png'
+import { Link } from 'react-router-dom';
+import '../../style/Projects.css';
 
 const iconsWidth = 45
 const iconsHeight = 45
@@ -45,11 +48,11 @@ const technologyIcons = {
     ),
     Tensorflow: (
       
-      <img width={iconsWidth} height={iconsHeight} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
+      <img width={iconsWidth} height={iconsHeight} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt='Tensorflow' />
           
     ),
     Numpy: (
-      <img width={iconsWidth} height={iconsHeight} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
+      <img width={iconsWidth} height={iconsHeight} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt='Numpy' />
     ),
     React: (
         <svg width={iconsWidth} height={iconsHeight} viewBox="0 0 128 128">
@@ -75,38 +78,37 @@ const technologyIcons = {
 
 const projects = [
   {
-    name: 'Portfolio',
-    description: 'Here is where I share my experience, projects, knowledge and everything related to coding.',
-    technologies: ['NodeJS', 'React', 'Github'],
-    githubRepo: 'https://github.com/yourusername/project1',
-    image: pythonOop,
-  },
-  {
     name: 'Virtual Assistant',
     description: 'Albert is a voice commanded virtual assistant that heps me with everyday things, such as play music, send texts, make searches and open applications.',
     technologies: ['Python', 'Javascript', 'NodeJS'],
-    githubRepo: 'https://github.com/yourusername/project1',
+    githubRepo: 'https://github.com/oenzocabral/Albert',
     image: pythonOop,
   },
   {
     name: 'Clothes Classifier',
     description: 'This is an AI model that is trained on the fashion mnist dataset. Given the picture of a piece of clothing, it is able to label it as t-shirts, trowsers, shoes, and so on.',
     technologies: ['Python', 'Tensorflow', 'Numpy'],
-    githubRepo: 'https://github.com/oenzocabral/ClothingClassifier',
+    githubRepo: 'https://github.com/oenzocabral/ClothesClassifier',
     image: clothesClassifier,
     host: 'https://colab.research.google.com/drive/1coMmkPZfXZUQSEueCQhhqq66BASmroiV?usp=sharing',
     hostText: 'Visit on Colab'
   },
   {
-    name: 'Simon Game',
-    description: 'The Simon Game is a memory game that uses sound and color to stimulate your memory.',
-    technologies: ['Javascript', 'HTML', 'CSS'],
-    githubRepo: 'https://github.com/yourusername/project1',
-    image: simonGame,
-    host: 'https://oenzocabral.github.io/SimonGame',
-    hostText: 'Visit Website'
+    name: 'Purchase Predictor',
+    description: 'This AI model trains on binary represented user interaction data with a website, and predicts the chances of the user to purchase a product or sign a subscription.',
+    technologies: ['Python', 'Tensorflow', 'Numpy'],
+    githubRepo: 'https://github.com/oenzocabral/PurchasePredictor',
+    image: purchasePredictor,
+    host: 'https://colab.research.google.com/drive/1mXcMUXb3kKi1sOtKFwS4TaG4OvRe4QqI?usp=sharing',
+    hostText: 'Visit on Colab'
   },
-  
+  {
+    name: 'Hangman Game',
+    description: 'It\' your classical Hangman Game, but now you can play it online on mobile and desktop (still in development)',
+    technologies: ['Javascript', 'React', 'NodeJS'],
+    githubRepo: 'https://github.com/oenzocabral/HangmanGame',
+    image: hangman
+  }
 ];
 
 const Projects = () => {
@@ -115,7 +117,7 @@ const Projects = () => {
       <Row>
         {projects.map((project, index) => (
           <Col key={index} lg={6} md={6} sm={12}>
-            <Card className="project-card project-background">
+            <Card className="project-card custom-card">
             <div className="project-image">
                 <img className='border' src={project.image} alt={project.name} />
             </div>
@@ -146,8 +148,10 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
+      <Link to={"/projects"} className='fas fa-chevron-right btn-lg'>See More Projects</Link>
     </Container>
   );
 };
 
 export default Projects;
+export { technologyIcons };

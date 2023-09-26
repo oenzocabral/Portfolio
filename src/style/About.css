@@ -1,0 +1,25 @@
+/* Custom CSS for the timeline */
+.timeline {
+    position: relative;
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Adjust the left position to control the line's placement */
+    width: 2px; /* Line width */
+    height: 100%;
+    background-color: #007bff; /* Line color */
+    z-index: -1;
+  }
+  

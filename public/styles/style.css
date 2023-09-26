@@ -74,7 +74,6 @@
   .navigation button:hover {
     background-color: #0056b3;
   }
-  /* ProjectSection.css */
 
 .project-section {
   text-align: center;
@@ -158,6 +157,39 @@ a {
   border: 2px solid #007bff;
   border-radius: 50%;
 } 
+
+/* Remove the border on hover and active state */
+.custom-dropdown-button:focus,
+.custom-dropdown-button:active,
+.custom-dropdown-button:hover {
+  box-shadow: none;
+  border: none;
+}
+
+/* Style the button text color and background color */
+.custom-dropdown-button {
+  color: #fff;
+  background-color: #007bff; /* Change to your desired background color */
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+  color: #000; /* Change to your desired text color */
+  background-color: #fff; /* Change to your desired background color */
+}
+
+/* Style the active dropdown item */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #007bff; /* Change to your desired active background color */
+  color: #fff; /* Change to your desired active text color */
+}
+
+/* Style the dropdown items on hover */
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Change to your desired hover background color */
+  color: #000; /* Change to your desired hover text color */
+}
 
   /* Media query for tablets */
 @media screen and (max-width: 768px) {

@@ -6,6 +6,10 @@ import deepLearning from '../../imgs/Certificates/deep-learning.png';
 import jsLanguage from '../../imgs/Certificates/js-explloring-the-language.png';
 import mlMultiDimData from '../../imgs/Certificates/ml-multidimensional-data.png';
 import responsiveLayouts from '../../imgs/Certificates/responsive-layouts.png';
+import pythonDataSciencce from '../../imgs/Certificates/pythonDataScience.png';
+import pythonDataSciencePandas from '../../imgs/Certificates/pythonDataSciencePandas.png';
+import mlClassification from '../../imgs/Certificates/mlClassification.png';
+import djangoModels from '../../imgs/Certificates/djangoModels.png';
 
 const certificatesData = [
   {
@@ -13,18 +17,16 @@ const certificatesData = [
     title: 'Python and Object Oriented Programming',
     projects: [
       { name: 'Hash Game', repoUrl: 'https://github.com/oenzocabral/HashGame' },
-      { name: 'Hangman Game', repoUrl: 'https://github.com/oenzocabral/HangmanGame' },
       { name: 'Albert, the personal assistant', repoUrl: 'https://github.com/oenzocabral/Albert'},
-      { name: 'Animal Classifier', repoUrl: 'https://github.com/oenzocabral/AnimalClassifier'}
+      { name: 'Dog or Cat Classifier', repoUrl: 'https://github.com/oenzocabral/DogVsCatClassifier'}
     ],
   },
   {
     imageUrl: deepLearning,
     title: 'Deep Learning: How the Network Learns',
     projects: [
-      { name: 'Clothes Classifier', repoUrl: 'https://github.com/oenzocabral/AnimalClassifier'},
+      { name: 'Clothes Classifier', repoUrl: 'https://github.com/oenzocabral/ClothesClassifier'},
       { name: 'Handwriting Classifier', repoUrl: 'https://github.com/oenzocabral/HandwritingClassifier'},
-      { name: 'Person Classifier', repoUrl: 'https://github.com/oenzocabral/PersonClassifier'},
     ],
   },
   {
@@ -32,14 +34,13 @@ const certificatesData = [
     title: 'Javascript: Exploring the Language',
     projects: [
       { name: 'Simon Game', repoUrl: 'https://github.com/oenzocabral/SimonGame'},
-      { name: 'Day Checkout Website', repoUrl: 'https://github.com/oenzocabral/DayCheckout'}
     ],
   },
   {
     imageUrl: mlMultiDimData,
     title: 'Machine Learning: Dealing with Multi-dimensional Data',
     projects: [
-      { name: 'Dog or Cat Classifier', repoUrl: 'https://github.com/oenzocabral/AnimalClassifier'}
+      { name: 'Dog or Cat Classifier', repoUrl: 'https://github.com/oenzocabral/DogVsCatClassifier'}
     ]
   },
   {
@@ -47,7 +48,34 @@ const certificatesData = [
     title: 'Responsive Layouts: Working with Mobile',
     projects: [
       {name: 'My Portfolio', repoUrl: 'https://github.com/oenzocabral/Portfolio'},
-      {name: 'Day Checkout Website', repoUrl: 'https://github.com/oenzocabral/DayCheckout'}
+    ]
+  },
+  {
+    imageUrl: djangoModels,
+    title: 'Django: Models, Routes and Views',
+    projects: [
+
+    ]
+  },
+  {
+    imageUrl: pythonDataSciencce,
+    title: 'Python for Data Science',
+    projects: [
+      {name: 'Car Price Predictor', repoUrl: 'https://github.com/oenzocabral/CarPricePredictor'}
+    ]
+  },
+  {
+    imageUrl: pythonDataSciencePandas, 
+    title: 'Python for DS: Functions, Packages and Pandas',
+    projects: [
+      {name: 'Car Price Predictor', repoUrl: 'https://github.com/oenzocabral/CarPricePredictor'}
+    ]
+  },
+  {
+    imageUrl: mlClassification,
+    title: 'Machine Learning: Classificatin with SKLearn',
+    projects: [
+      {name: 'Handwriting Recognizer', repoUrl: 'https://github.com/oenzocabral/HandwritingRecognizer'}
     ]
   }
 ];
@@ -69,7 +97,7 @@ const CertificateCarousel = ({ certificates }) => {
     return () => {
       clearInterval(intervalId);
     };
-  }, [certificates, nextCertificate]); // Include nextCertificate in the dependency array
+  }, [certificates, nextCertificate]);
 
   return (
     <div className="certificates-carousel">

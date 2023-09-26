@@ -8,7 +8,7 @@ const Certificate = ({ imageUrl, title, projects }) => (
         {projects.map((project, index) => (
           <li key={index}>
             <span className="mr-2">
-              <i className="bi bi-github"></i> {/* GitHub icon */}
+              <i className="bi bi-github"></i>
             </span>
             <a
               href={project.repoUrl}

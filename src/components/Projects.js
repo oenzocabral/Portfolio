@@ -11,6 +11,9 @@ import clothesClassifier from '../imgs/Projects/clothesClassifier.png';
 import hash from '../imgs/Projects/hash.png';
 import purchasePredictor from '../imgs/Projects/purchasePredictor.png';
 import dogsVsCats from '../imgs/Projects/dogsVsCats.png';
+import albert from '../imgs/Projects/albert.png';
+import hangman from '../imgs/Projects/hangman.png';
+
 
 import '../style/Projects.css';
 
@@ -28,7 +31,7 @@ const projectsData = [
       description: 'Albert is a voice commanded virtual assistant that heps me with everyday things, such as play music, send texts, make searches and open applications.',
       technologies: ['Python', 'Javascript', 'NodeJS'],
       githubRepo: 'https://github.com/oenzocabral/Albert',
-      image: pythonOop,
+      image: albert,
     },
     {
       name: 'Clothes Classifier',
@@ -65,15 +68,21 @@ const projectsData = [
       image: hash,
     },
     {
-        name: 'Dog or Cat Classifier',
-        description: 'This Ai model was trained on thousands of images of cats and dogs, and given an image, it is able to recognize if it is a cat or a dog.',
-        technologies: ['Python', 'Tensorflow'],
-        githubRepo: 'https://github.com/oenzocabral/DogsVsCatsClassifier',
-        image: dogsVsCats,
-        host: 'https://colab.research.google.com/drive/13HDYjNrx-y4IOjigv9RNTff43rsSuqUx?usp=sharing',
-        hostText: 'Visit on Colab'
-      }
-    
+      name: 'Dog or Cat Classifier',
+      description: 'This Ai model was trained on thousands of images of cats and dogs, and given an image, it is able to recognize if it is a cat or a dog.',
+      technologies: ['Python', 'Tensorflow'],
+      githubRepo: 'https://github.com/oenzocabral/DogsVsCatsClassifier',
+      image: dogsVsCats,
+      host: 'https://colab.research.google.com/drive/13HDYjNrx-y4IOjigv9RNTff43rsSuqUx?usp=sharing',
+      hostText: 'Visit on Colab'
+    },
+    {
+      name: 'Hangman Game',
+      description: 'It\' your classical Hangman Game, but now you can play it online on mobile and desktop (still in development)',
+      technologies: ['Javascript', 'React', 'NodeJS'],
+      githubRepo: 'https://github.com/oenzocabral/HangmanGame',
+      image: hangman
+    }
   ];
 
 function ProjectsPage() {

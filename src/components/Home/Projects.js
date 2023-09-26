@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import pythonOop from '../../imgs/Projects/portfolio.png';
 import clothesClassifier from '../../imgs/Projects/clothesClassifier.png';
 import purchasePredictor from '../../imgs/Projects/purchasePredictor.png';
 import hangman from '../../imgs/Projects/hangman.png'
+import albert from '../../imgs/Projects/albert.png'
 import { Link } from 'react-router-dom';
 import '../../style/Projects.css';
 
@@ -82,7 +82,7 @@ const projects = [
     description: 'Albert is a voice commanded virtual assistant that heps me with everyday things, such as play music, send texts, make searches and open applications.',
     technologies: ['Python', 'Javascript', 'NodeJS'],
     githubRepo: 'https://github.com/oenzocabral/Albert',
-    image: pythonOop,
+    image: albert,
   },
   {
     name: 'Clothes Classifier',
@@ -108,7 +108,7 @@ const projects = [
     technologies: ['Javascript', 'React', 'NodeJS'],
     githubRepo: 'https://github.com/oenzocabral/HangmanGame',
     image: hangman
-  }
+  },
 ];
 
 const Projects = () => {

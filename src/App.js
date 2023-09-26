@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <Home />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path='/about' element={<About />} />
